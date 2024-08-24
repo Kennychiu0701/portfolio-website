@@ -1,0 +1,579 @@
+/* -------- CSS for mobile menu -------- */
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    margin-right: -99px;
+
+}
+#hamburger-icon div{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2{
+   opacity: 0;
+}
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.3s ease;
+}
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background: rgb(2, 37, 27);
+    transition: 0.3s ease;
+    color: white;
+}
+.mobile-menu a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width: 600px){
+ header nav{
+    display: none;
+ }
+ #hamburger-icon{
+    display: block;
+ }
+ .profile-intro{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.profile-title{
+    margin-top: 250px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(77, 75, 75);
+}
+.profile-text{
+    color: white;
+    font-weight: 500;
+    font-size: 30px; 
+}
+.profile-description{
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo{
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+.about-col-1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 100px;
+    gap: 20px;
+    color: white;
+    order: 2;
+    align-items: center;
+    justify-content: center;
+}
+.about-col-1 p{
+    text-align: center;
+}
+.about-col-1 h1{
+    font-size: 50px;
+}
+.about-col-2{
+    display: flex;
+    order: 1;
+    align-items: center;
+    justify-content: center;
+}
+.tech-list{
+    display: flex;
+    margin-left: 14px;
+    justify-content: center;
+}
+.tech-list ul li{
+    text-decoration: none;
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>') ;
+}
+.about-photo{
+    width: 250px;
+    margin-top: 100px;
+    margin-left: 40px;
+    border-radius: 50%;
+    margin-bottom: -60px;
+    padding-right: 50px;
+}
+.experience-container{
+    width: 100%;
+}
+.experience-title{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+}
+.tabs-one{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 200px;
+    
+    justify-content: center;
+}
+.tab-title{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.tab-titles{
+    width: 100%;
+}
+.tab-links{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: green;
+    position: absolute;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    color: white;
+    width: 300px;
+}
+.tab-contents ul li span{
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.contact-container h2{
+    color: white;
+    font-size: 30px;
+}
+.contact-container h1{
+    color: rgb(121, 118, 118);
+    font-size: 15px;
+}
+.contact-container p{
+    color: white;
+}
+.email-button{
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(1, 78, 25);
+    transition: 0.3s ease;
+}
+.email-button:hover{
+    background-color: rgb(0, 129, 41);
+    transition: 0.3s ease;
+}
+
+/* -------- Footer -------- */
+
+footer ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    color: white;
+    transition: 0.3s ease;
+    text-decoration: none;
+    margin-left: -20px;
+}
+.icons:hover{
+    color: rgb(133, 132, 132);
+    transition: 0.3s ease;
+}
+.copyright-text{
+    font-size: 10px;
+    display: block;
+    margin-left: 40px;
+}
+}
+@media only screen and (max-width: 800px){
+   header{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between
+   }
+   nav ul a{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: -10px;
+    padding: 5px;
+   }
+   nav a:hover,
+   nav a.active{
+    font-size: 12px;
+    transition: 0.3s ease;
+    color: rgb(0, 190, 102);
+} 
+ .logo{
+       width: 120px;
+       height: 50px;
+       object-fit: cover;
+       margin-left: -120px;
+   }
+   .profile-intro{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.profile-title{
+    margin-top: 250px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(77, 75, 75);
+}
+.profile-text{
+    color: white;
+    font-weight: 500;
+    font-size: 30px; 
+}
+.profile-description{
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+   
+ /* -------- Footer -------- */
+   
+footer ul{
+       display: flex;
+       gap: 20px;
+       align-items: center;
+       justify-content: center;
+   }
+.icons{
+       color: white;
+       transition: 0.3s ease;
+       text-decoration: none;
+       margin-left: -20px;
+   }
+.icons:hover{
+       color: rgb(133, 132, 132);
+       transition: 0.3s ease;
+   }
+.copyright-text{
+       font-size: 10px;
+       display: block;
+       margin-left: 40px;
+   }
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+.about-col-1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 100px;
+    gap: 20px;
+    color: white;
+    order: 2;
+    align-items: center;
+    justify-content: center;
+}
+.about-col-1 p{
+    text-align: center;
+}
+.about-col-1 h1{
+    font-size: 50px;
+}
+.about-col-2{
+    display: flex;
+    order: 1;
+    align-items: center;
+    justify-content: center;
+}
+.tech-list{
+    display: flex;
+    margin-left: 14px;
+    justify-content: center;
+}
+.tech-list ul li{
+    text-decoration: none;
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>') ;
+}
+.about-photo{
+    width: 250px;
+    margin-top: 100px;
+    margin-left: 40px;
+    border-radius: 50%;
+    margin-bottom: -60px;
+    padding-right: 50px;
+}
+.contact-container{
+   display: flex;
+}
+.contact-container h2{
+    color: white;
+    font-size: 30px;
+}
+.contact-container h1{
+    color: rgb(121, 118, 118);
+    font-size: 15px;
+}
+.contact-container p{
+    color: white;
+}
+.email-button{
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(1, 78, 25);
+    transition: 0.3s ease;
+}
+.email-button:hover{
+    background-color: rgb(0, 129, 41);
+    transition: 0.3s ease;
+}
+   }
+ @media only screen and (min-width: 801px) and (max-width: 1000px){
+    header{
+     padding-top: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     justify-content: space-between
+    }
+    nav ul a{
+     font-size: 12px;
+     margin-left: 10px;
+     margin-right: -10px;
+     padding: 5px;
+    }
+    nav a:hover,
+    nav a.active{
+     font-size: 12px;
+     transition: 0.3s ease;
+     color: rgb(0, 190, 102);
+ }
+    .logo{
+        width: 120px;
+        height: 50px;
+        object-fit: cover;
+        margin-left: -120px;
+    }
+    .profile-intro{
+        text-align: center;
+        font-size: 30px;
+        color: white;
+    }
+    .profile-title{
+        margin-top: 250px;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(77, 75, 75);
+    }
+    .profile-text{
+        color: white;
+        font-weight: 500;
+        font-size: 30px; 
+    }
+    .profile-description{
+        margin-top: 30px;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* -------- Footer -------- */
+    
+    footer ul{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .icons{
+        color: white;
+        transition: 0.3s ease;
+        text-decoration: none;
+        margin-left: -20px;
+    }
+    .icons:hover{
+        color: rgb(133, 132, 132);
+        transition: 0.3s ease;
+    }
+    .copyright-text{
+        font-size: 10px;
+        display: block;
+        margin-left: 40px;
+    }
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+.about-col-1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 100px;
+    gap: 20px;
+    color: white;
+    order: 2;
+    align-items: center;
+    justify-content: center;
+}
+.about-col-1 p{
+    text-align: center;
+}
+.about-col-1 h1{
+    font-size: 50px;
+}
+.about-col-2{
+    display: flex;
+    order: 1;
+    align-items: center;
+    justify-content: center;
+}
+.tech-list{
+    display: flex;
+    margin-left: 14px;
+    justify-content: center;
+}
+.tech-list ul li{
+    text-decoration: none;
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>') ;
+}
+.about-photo{
+    width: 250px;
+    margin-top: 100px;
+    margin-left: 40px;
+    border-radius: 50%;
+    margin-bottom: -60px;
+    padding-right: 50px;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.contact-container h2{
+    color: white;
+    font-size: 30px;
+}
+.contact-container h1{
+    color: rgb(121, 118, 118);
+    font-size: 15px;
+}
+.contact-container p{
+    color: white;
+}
+.email-button{
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(1, 78, 25);
+    transition: 0.3s ease;
+}
+.email-button:hover{
+    background-color: rgb(0, 129, 41);
+    transition: 0.3s ease;
+}
+}
+
+
+
+

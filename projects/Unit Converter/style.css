@@ -1,0 +1,27 @@
+body {
+    background-color: lightblue;
+    padding: 20px;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  
+  h1 {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+  }
+  
+  p{
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+  }
+
+  

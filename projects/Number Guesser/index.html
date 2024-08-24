@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Guessing Game</h1>
+      <p class="instruction">Guess a number between 1 and 100</p>
+
+      <div class="input-number">
+        <input class="input-box" type="number" id="guess" placeholder="Enter Number...">
+      </div>
+      <div class="buttons">
+        <button  onclick="checkGuess()">Submit</button>
+        <button class="restart" onclick="restartGame()">Restart</button>
+      </div>
+      <p id="feedback" class="feedback"></p>
+      <p id="guesses" class="guesses"></p>
+      <p class="author">By Kenneth Chiu</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

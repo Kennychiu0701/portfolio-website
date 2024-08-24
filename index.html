@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Kenneth Chiu</title>
+        <!-- ===== CSS Files ===== -->
+         <link rel="stylesheet" href="navbar-style.css">
+         <link rel="stylesheet" href="main.css">
+         <link rel="stylesheet" href="mobile.css">
+         <link rel="stylesheet" href="footer.css">
+
+
+        <!-- ===== 3RD PARTY LINKS ===== -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+          <header>
+              <a href="#home">
+                <img src="images/logo.png" class="logo">
+              </a>
+            <nav>
+                <ul>
+                    <a href="#about" class="active">About Me</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact Me</a>
+                    <a target="_blank" href="C:\Users\kenny\Desktop\Portfolio Website\images\Kenny Updated CV 2024.pdf" class="header-resume">Resume</a>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+              <ul class="mobile-menu">
+                <a href="#home">Home</a>
+                <a href="#about" class="active">About Me</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
+                <a target="_blank" href="C:\Users\kenny\Desktop\Portfolio Website\images\Kenny Updated CV 2024.pdf" class="header-resume">Resume</a>
+            </ul>
+            </div>
+          </header>
+          <section id="home">
+            <div class="home-container">
+                    <div class="profile-title"><span class="profile-intro"> Hi, my name is </span> <br>Kenneth Chiu</div>
+                    <div class="profile-text">I <span class="auto-type"></span> </div>
+                    <div class="profile-description">
+                      I'm a Self Taught Software Engineer specializing in Front-End Development building exceptional websites.
+                    </div>
+            </div>
+          </section>
+          <section id="about">
+            <div class="about-container">
+              <div class="about-col-1">
+                  <h1 class="about-text">About Me</h1>
+                  <p>Hello! My name is Kenny and I enjoy creating and programing projects on the internet
+                    My interest in Web Development started back in 2020 during COVID lockdown when I started
+                    to learn HTML, CSS and Javascript. After taking back and forth breaks. I decided to make this 
+                    a long-term career goal for me. </p>
+                  <p>Moving forward to today, I am currently an Accounts Manager and going
+                      through the journey to become a Software Programmer. My current focus is to build my skills and expand
+                      my knowledge on Full-Stack Development and building accessible yet inclusive digital products for a 
+                      variety of clients.</p>  
+                  <p> During my spare time, I enjoy playing a range of differnet games and love being out and about!</p>
+                  <p>Here are a few technologies I have been working with:</p>  
+                  <div class="tech-list">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <ul>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React</li>
+                    <li>TypeScript</li>
+                  </ul></div>
+              </div>
+              <div class="about-col-2">
+                <img src="images/KENNY.JPG" class="about-photo">
+              </div>
+            </div>
+          </section>
+          <section id="experience">
+            <div class="experience-container">
+              <div class="tabs-container">
+                <div class="tabs-one">
+                  <p class="experience-title">
+                    Experience
+                 </p>
+                  <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('apple')">Apple</p>
+                    <p class="tab-links" onclick="opentab('lego')">LEGO</p>
+                    <p class="tab-links" onclick="opentab('qualification')">Qualifications</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="apple">
+                    <ul>
+                      <li><span>Business Expert (March 2024 - Present)</span><br>Supporting Business Client's 
+                        IT Infrastructure with Apple Products</li>
+                        <li><span>Specialist (July 2022 - March 2024)</span><br>Introducing Apple products to clients to support their
+                        professional or personal use.</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="lego">
+                    <ul>
+                      <li><span>Sales Associate (March 2020 - June 2022)</span><br>Showcasing creative and immersive experience
+                      with the World's most known building toy collections</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="qualification">
+                    <ul>
+                      <li><span>Mimo (Professional Certificate) </span><br>Front-End Development with 
+                        HTML, CSS, JavaScript, React and Data Structure<br></li>
+                      <li><span>Meta (Professional Certificate) </span><br>Introduction to Programming 
+                        Using HTML, CSS and JavaScript<br></li>
+                        <li><span>University of Greenwich</span><br>BSc Mathematics - Second Class Honors (2:1)<br></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <section id="projects">
+            <div class="projects-container">
+              <h1 class="project-title">Projects</h1>
+              <div class="projects-list">
+                <div>
+                  <i class="fa-solid fa-list-ol"></i>
+                  <h2>Number Guesser</h2>
+                  <p>Uses JavaScript with Math Libary to create a random Number
+                    for us to try and guess.
+                  </p>
+                  <a href="C:\Users\kenny\Desktop\Portfolio Website\projects\Number Guesser\index.html" target="_blank">Try It Out!</a>
+                </div>
+                <div>
+                  <i class="fa-solid fa-road"></i>
+                  <h2>Unit Converter</h2>
+                  <p>Uses JavaScript with Math Libary to convert a number input
+                    into a unit conversion.
+                  </p>
+                  <a href="C:\Users\kenny\Desktop\Portfolio Website\projects\Unit Converter\index.html" target="_blank">Try It Out!</a>
+                </div>
+                <div>
+                  <i class="fa-brands fa-js"></i>
+                  <h2>More To Add Soon!</h2>
+                  <p>Follow my GitHub! <br>
+                  Projects are current in progress! <br>
+                Thank you!</p>
+                  <a href="https://github.com/Kennychiu0701" target="_blank">learn more</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="contact">
+            <div class="contact-container">
+              <h2>What's Next?</h2>
+              <h1>Get In Touch</h1>
+              <p>Although I am continue to expand my knowledge on various languages and 
+                libaries. I am currently not looking for any new opportunities. My inbox is always 
+                open. Whether you have a question or just want to say hello. I will try my very best
+                to get back to you! Alternatively I am also building a discord community which you can
+                find on the discord icon in my footer!
+              </p>
+              <a href="mailto:kennethwebdev0701@gmail.com" class="email-button">Say Hello!</a>
+            </div>
+          </section>
+          <footer>
+            <ul>
+              <a href="https://discord.gg/R9JMS8cCgM" target="_blank" class="icons">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/kennethchiu125/" target="_blank" class="icons">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a href="https://www.instagram.com/developer.kenny?igsh=MWFoaWM4YTdibGx3dQ==" target="_blank" class="icons">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="https://github.com/Kennychiu0701" target="_blank" class="icons">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </ul>
+            <div class="copyright-text">
+              <p>Copyright &copy 2024 Kenneth Chiu. All Rights Reserved</p>
+            </div>
+          </footer>
+         <!-- ===== JS Files ===== -->
+          <script src="script.js"></script>
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script src="https://kit.fontawesome.com/298cbef351.js" crossorigin="anonymous"></script>
+          <!-- ===== JS Script ===== -->
+          <script>
+            var typed = new Typed(".auto-type", {
+            strings: ["build things for the web.", "am a Mathematician.", " am based in London."],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+            });
+          </script>
+          <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+              for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+              }
+              for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+              }
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+            }
+          </script>
+
+    </body>
+</html>
