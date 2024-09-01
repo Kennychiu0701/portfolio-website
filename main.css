@@ -213,6 +213,7 @@ section:nth-child(odd){
 }
 .contact-container p{
     color: white;
+    width: 400px;
 }
 .email-button{
     text-decoration: none;
