@@ -1,0 +1,228 @@
+* {
+    font-family: Montserrat;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0
+}
+body,
+html {
+    margin: 0; /* Reset margins to avoid unexpected scroll bars */
+    padding: 0; /* Reset padding for full-width flex container */
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+body {
+    display: flex; /* Set body as a flex container */
+    flex-direction: row; /* Align children horizontally */
+}
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px; /* Fixed width for left container */
+    height: 100%; /* Fill vertical space */
+}
+.index-col {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 41, 41);
+    padding: 10px;
+    width: 180px;
+    margin: 10px;
+    border-radius: 8px;
+}
+.index-col a{
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.index-col a i{
+    margin-right: 5px;
+}
+.logo{
+    width: 70px;
+}
+.library-col{
+    background-color: rgb(41, 41, 41);
+    width: 180px;
+    margin-left: 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+    flex: 1;
+}
+.library-col h1{
+    font-size: 12px;
+}
+.media-container{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: rgb(41, 41, 41);
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+.album-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.album-container h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.album-container p{
+    font-size: 12px;
+    text-align: center;
+}
+.album-icon{
+    width: 60px;
+    margin: 10px 0px 10px 0px;
+}
+.media-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: center;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.controls button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    color: #ffffff; /* Set the icon color */
+    font-size: 24px; /* Size of the icons */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    outline: none; /* Remove any outline */
+    display: flex;
+    align-items: center;
+}
+
+.controls button:hover {
+    color: #1db954; /* Spotify green on hover */
+}
+.current-time,
+.total-time{
+    font-size: 12px;
+}
+.current-time{
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.progress-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.volume-container{
+    display: flex;
+    margin-top: 10px;
+}
+.volume-container button{
+    background: none;
+    border: none;
+    color: white;
+    margin-right: 5px;
+    outline: none;
+}
+.right-container{
+    display: flex;
+    flex: 1; /* Fill remaining horizontal space */
+    flex-direction: column; /* Align children horizontally */
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 8px
+}
+.announcement-container {
+    background-color: rgb(41, 41, 41);
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex: 1;
+}
+.featured-album{
+    margin-left: 20px;
+}
+.featured-album-icon{
+    width: 200px;
+    height: 200px;
+}
+.featured-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.featured-text h1{
+    font-size: 60px;
+}
+.featured-text-button{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 30px;
+}
+.featured-text-button a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.play-button{
+    background-color: green;
+    padding: 12px 20px 12px 20px;
+    border-radius: 30px;
+    color: black;
+}
+.follow-button{
+    background-color: rgb(0, 0, 0);
+    padding: 12px 20px 12px 20px;
+    border-radius: 30px;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+.your-playlist{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.playlist-grid{
+    display: grid;
+   gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    background-color: rgb(41, 41, 41);
+    padding: 10px;
+}
+.playlists{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(31, 31, 31);
+    border-radius: 8px;
+}
+.playlist-title{
+    font-weight: 500;
+}
+.album-photo{
+    width: 55px;
+    margin-right: 10px;
+}
